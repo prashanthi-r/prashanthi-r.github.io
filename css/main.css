@@ -504,3 +504,38 @@ dd {
   background-color: #1585cf;
   opacity: .8;
 }
+
+.contact{
+    /*background-color: #2f67cd;*/
+}
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form label{
+    font-size: 3px;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding:1rem;
+    margin-bottom: 5px;
+    /*border: none;*/
+    outline-color: #2f67cd;
+}
+input[type="submit"]{
+    width: initial;
+    background-color: #dddffd;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+input[type="submit"]:hover{
+    color: #2f67cd;
+    background-color: #eb648c;
+}
