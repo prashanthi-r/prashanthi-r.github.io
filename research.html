@@ -61,9 +61,9 @@
          <div class="col-sm-12">
             <h1>Academics and Research</h1>
             <p>
-               I am currently working on my undergraduate thesis under the supervision of <a href="https://ashoka.edu.in/faculty#!/mahavir-jhawar-33">Prof. Mahavir Jhawar</a>. In my thesis, I will be surveying the various truncation protocols in recent works in PPML such as <a href='https://eprint.iacr.org/2017/396.pdf'>SecureML</a> and <a href="https://eprint.iacr.org/2020/042">BLAZE</a>. <!-- For this purpose, I have been studying state-of-the-art PPLR frameworks such as <a href='https://eprint.iacr.org/2017/396.pdf'>SecureML</a> and <a href="https://eprint.iacr.org/2020/042">BLAZE</a> closely. -->
+               I recently submitted my undergraduate thesis under the supervision of <a href="https://ashoka.edu.in/faculty#!/mahavir-jhawar-33">Prof. Mahavir Jhawar</a>. In my thesis, I have studied and implemented privacy-preserving linear regression in two frameworks, namely, <a href='https://eprint.iacr.org/2017/396.pdf'>SecureML</a>(2017) in the 2-server setting and <a href="https://eprint.iacr.org/2020/042">BLAZE</a>(2020) in the 3-server setting. For more information, check the publications section below. 
                <br><br>
-               In addition to this, I have been working with <a href="https://ashoka.edu.in/faculty#!/debayan-gupta-1157">Prof. Debayan Gupta</a> on exponentiation-based activation functions for privacy-preserving neural network models. I have also been studying attacks and attack mitigation in Bitcoin under <a href="https://mysite.ku.edu.tr/akupcu/">Prof. Alptekin Küpçü</a>, Koç University, Turkey.
+               In addition to this, I have been working with <a href="https://ashoka.edu.in/faculty#!/debayan-gupta-1157">Prof. Debayan Gupta</a> on privacy-preserving neural networks and privacy-preserving federated learning. I have also been studying attacks and attack mitigation in Bitcoin under <a href="https://mysite.ku.edu.tr/akupcu/">Prof. Alptekin Küpçü</a>, Koç University, Turkey.
 
 
             <!-- List of Research interests -->
@@ -74,15 +74,28 @@
                <li><em>{AREA 4}</em>&mdash;{BRIEF DESCRIPTION OF AREA}</li>
                <li><em>{AREA 5}</em>&mdash;{BRIEF DESCRIPTION OF AREA}</li>
                <li><em>{AREA 6}</em>&mdash;{BRIEF DESCRIPTION OF AREA}</li>
-            </ul>
- -->
+            </ul> -->
+
             <!-- Publication -->
             <h3 class="push-down-4"><span>Select Publications</span></h3>
+
+             <ul class="publications">
+               <li>Ramachandran, P., Jhawar M. (2021). 'Privacy-Preserving Linear Regression: Efficient Multiplication Protocols in 2-party and 3-party Settings'. Capstone Thesis. Ashoka University, Sonipat, India.</li></ul>
+            <blockquote>Abstract
+               <footer>
+            The aim of this work is to study privacy-preserving machine learning (PPML) for linear regression in the 2-server and 3-server settings. In this work, we have studied and implemented privacy-preserving linear regression in two frameworks, namely, SecureML (Mohassel and Zhang, IEEE-SP, 2017) in the 2-server setting and BLAZE (Patra and Suresh, NDSS, 2020) in the 3-server setting. We have extensively outlined the multiplication protocols in these two frameworks since multiplication is a central aspect of linear regression. As part of this study, we formally treat ring arithmetic over secret-shared decimal numbers in the 2- and 3-server settings by looking at them as secret sharing schemes. We propose an optimisation in the multiplication protocol of BLAZE that decreases the communication complexity of its gradient descent protocol on 60,000 data points from the MNIST dataset (with batch size 128) by 3765 MB in each epoch. Our implementation can be found <a href="https://github.com/prashanthi-r/thesis">here.</a>
+            </footer>
+            </blockquote>
+            <!-- <a id="link-to-docs" role="button" class="btn btn-default" href="https://arxiv.org/abs/2011.03241" target="_blank">
+                  <i class="far fa-file-pdf fa-fw" aria-hidden="true"></i>&nbsp; Read More
+               </a> -->
+        <!--     <a href="https://www.youtube.com/watch?v=eFQr6SgONyk&feature=youtu.be&t=6589" alt="Video" style="border-bottom: none"><img src="img/play.png" width="30" style="vertical-align:middle"></a> -->
+            <!-- <h5>Work in Progress</h5> -->
 
             <h5>Conference Papers</h5>
 
             <ul class="publications">
-               <li>Agrawal, N., Prashanthi, R., Biçer, O., & Küpçü, A. (2020). 'BlockSim-Net: A Network Based Blockchain Simulator'. BAŞARIM 2020: National High Performance Computing. Ankara Yıldırım Beyazıt University, Ankara, Turkey, 8-9 October 2020.</li></ul>
+               <li><strong>[Recently submitted to <a href="https://journals.tubitak.gov.tr/elektrik/index.htm">The Turkish Journal of Electrical Engineering and Computer Science</a></header>]</strong> Agrawal, N., Prashanthi, R., Biçer, O., & Küpçü, A. (2020). 'BlockSim-Net: A Network Based Blockchain Simulator'. BAŞARIM 2020: National High Performance Computing Conference. Ankara Yıldırım Beyazıt University, Ankara, Turkey, 8-9 October 2020.</li></ul>
             <blockquote>Abstract
                <footer>
             Since its proposal by Eyal and Sirer (CACM '13), selfish mining attack on proof-of-work blockchains has been studied extensively in terms of both improving its impact and defending against it. Before any defense is deployed in a real world blockchain system, it needs to be tested for security and dependability. However, real blockchain systems are too complex to conduct any test on or benchmark the developed protocols. Some simulation environments have been proposed recently, such as BlockSim (Maher et al., '20). However, BlockSim is developed for the simulation of an entire network on a single CPU. Therefore, it is insufficient to capture the essence of a real blockchain network, as it is not distributed and the complications such as propagation delays that occur in reality cannot be simulated realistically enough. In this work, we propose BlockSim-Net, a simple, efficient, high performance, network-based blockchain simulator, to better reflect reality.
@@ -95,7 +108,7 @@
             <!-- <h5>Work in Progress</h5> -->
             <br><br>
             <ul class="publications">
-               <li><strong>[Accepted at <a href="https://ppai21.github.io/">PPAI 21</a></header>]</strong> Ramachandran, P., Agarwal, S., Shah, A., Mondal, A., Gupta, D. (2020). 'S++: A Fast and Deployable Secure-Computation Framework for Privacy-Preserving Neural Network Training'.
+               <li><strong>[Accepted at <a href="https://ppai21.github.io/">PPAI 21</a></header>]</strong> Ramachandran, P., Agarwal, S., Shah, A., Mondal, A., Gupta, D. (2020). 'S++: A Fast and Deployable Secure-Computation Framework for Privacy-Preserving Neural Network Training'. Privacy-Preserving Artificial Intelligence Workshop, Association for the Advancement of Artificial Intelligence 2021. 
             </li>
             </ul>
             <blockquote>Abstract
@@ -150,7 +163,7 @@
 
             <h3 class="push-down-4"><span>Teaching</span></h3>
              <ul>
-              <li><strong>Teaching Assistant</strong>, <a href="">Computer Security and Privacy (Spring 2021)</a> | <span class="university"><em>{<a href=
+              <li><strong>Teaching Assistant</strong>, <a>Computer Security and Privacy (Spring 2021)</a> | <span class="university"><em>{<a href=
               "https://ashoka.edu.in">Ashoka University</a></em>}</li>
                <li><strong>Teaching Assistant</strong>, <a href="https://sites.google.com/ashoka.edu.in/cs1216">Computer Organisation and Systems (Monsoon 2020)</a> | <span class="university"><em>{<a href=
               "https://ashoka.edu.in">Ashoka University</a></em>}</li>
